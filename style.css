@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+body{
+
+    background-color:#fff;
+    margin:0;
+    padding:0;
+    
+}
+#score{
+
+    font-family: 'Poppins', sans-serif;
+  /*  background-color:#E3DFFF;*/
+    text-align: center;
+    position: relative;
+    font-size: 28px;
+    color: #000;
+}
+
+.grid{
+    width:200px;
+    height:400px;
+    display:flex;
+   flex-wrap: wrap;
+align-self: center;
+margin-left: 400px;
+margin-top: 60px;
+margin-bottom: inherit;
+background-color:  #f3f3f3; /* rgb(243, 240, 240);*/
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);  
+}
+
+.grid div{
+    width: 20px;
+    height: 20px;
+    /*background-color:#EF767A*/;
+    align-items: center;
+    
+}
+
+.tetromino{
+    background-color: #202A25;
+}
+
+.container{
+  display: flex;
+  
+
+}
+
+.mini-grid{
+width: 80px;
+height: 80px;
+display: flex;
+flex-wrap: wrap;
+background-color:#f3f3f3;
+margin-left: 90px;
+margin-top: 100px;
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+.mini-grid div{
+    width: 20px;
+    height: 20px;
+}
+
+.button{
+    position: absolute;
+    top:60%;
+    left:55%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height:60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing:border-box;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#DF2935,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 30px;
+    
+}
+button:hover
+{
+animation:animate 8s linear infinite;
+    background-size: 400%;
+    border-radius: 40px;
+    filter: blur(0.5px);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0%;
+    }
+    100%
+    {
+        background-position: 400%;
+    }
+}
+
+h3{
+
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    text-shadow: 0 10px 20px #0000.7;
+    margin-bottom: 30px;
+}
+
